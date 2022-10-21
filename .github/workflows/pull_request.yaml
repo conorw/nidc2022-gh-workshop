@@ -12,6 +12,6 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-        - name: keep it real
-          runs: echo "add code here"
+      - name: keep it real
+        runs: echo "add code here"
 
