@@ -22,5 +22,5 @@
 ## Build our executable
 ```
       - name: build the app
-        run: go build -o our-binary-${{ steps.vars.outputs.sha_short }} .
+        run: go build -o our-binary .
 ```
