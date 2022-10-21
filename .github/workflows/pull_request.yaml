@@ -97,23 +97,4 @@ jobs:
             #outputs: type=docker,dest=/tmp/image.tar
           outputs: type=docker
 
-      - name: gcloud setup
-        uses: google-github-actions/auth@v0
-        with:
-          credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }} 
-
-      - name: gcloud setup
-        uses: google-github-actions/setup-gcloud@v0
-
-      - name: gcloud auth
-        run: |
-          gcloud auth configure-docker
-
-      - name: publish to gcr
-        run: |
-          docker tag glennadjrussell/our-binary:${{ steps.vars.outputs.sha_short }} gcr.io/gh-pipeline/our-binary:${{ steps.vars.outputs.sha_short }}
-          docker push gcr.io/gh-pipeline/our-binary:${{ steps.vars.outputs.sha_short }}
-
-      - name: add comment
-        runs: echo "Posting a comment about our new container"
-
+      # Insert code here
