@@ -24,3 +24,12 @@
       - name: build the app
         run: go build -o our-binary .
 ```
+
+## Upload our binary
+```
+- name: upload binary
+        uses: actions/upload-artifact@v3
+        with:
+          name: our-binary
+          path: our-binary
+```
