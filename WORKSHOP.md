@@ -18,7 +18,7 @@
         run: |
           gcloud auth configure-docker
 ```
-## Push our image to Google COntainer Registry
+## Push our image to Google Container Registry
 ```
       - name: publish to gcr
         run: |
