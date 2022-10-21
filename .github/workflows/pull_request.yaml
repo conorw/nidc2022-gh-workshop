@@ -1,0 +1,17 @@
+name: deployment-pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+
+jobs:
+    build:
+      runs-on: ubuntu-latest
+
+      steps:
+      - name: keep it real
+        runs: echo "add code here"
+
